@@ -1,8 +1,8 @@
 {
     "90's": [
       {
-        "title": "Aap Ki Ankhon Mein Kuch - R.D. Burman",
-        "url": "songs/90's/Aap Ki Ankhon Mein Kuch - R.D. Burman.mp3",
+        "title": "Aap Ki Ankhon Mein Kuch - R.D Burman",
+        "url": "songs/90's/Aap Ki Ankhon Mein Kuch - R.D Burman.mp3",
         "image": "imgFolder/Aap Ki Ankhon Mein Kuch.png"
       }
     ],
@@ -57,9 +57,9 @@
     ],
     "study": [
       {
-        "title": "Focus and Melody",
-        "url": "songs/study/Focus and Melody.mp3",
-        "image": "imgFolder/Focus and Melody.png"
+        "title": "Focus Melody",
+        "url": "songs/study/Focus Melody.mp3",
+        "image": "imgFolder/Focus Melody.png"
       }
     ],
     "romance": [
