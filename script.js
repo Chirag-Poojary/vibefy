@@ -5,29 +5,26 @@ let currentIndex = 0;
 
 async function getsongs(folder) {
     currFolder = folder;
-    let a = await fetch('songMeta.json');
-    let response = await a.text();
-    let div = document.createElement("div");
-    div.innerHTML = response;
-    let as = div.getElementsByTagName("a");
-    let songs = [];
-    for (let i = 0; i < as.length; i++) {
-        const element = as[i];
-        if (element.href.endsWith(".mp3")) {
-            songs.push(element.href);
-        }
+    let response = await fetch('songMeta.json');
+    let data = await response.json();
+
+    const songs = data[folder];
+    if (!songs || songs.length === 0) {
+        console.error('No songs found for', folder);
+        return;
     }
 
     let songList = document.querySelector(".songlist");
     songList.innerHTML = "";
-    for (let song of songs) {
-        let filename = song.split('/').pop().replace('.mp3', '').replaceAll("%20", " ");
-        let [name, artist] = filename.split(' - ');
-        let songname = name.trim();
-        let songartist = artist ? artist.trim() : "Unknown Artist";
-        let image = `imgFolder/${songname}.png`;
+
+    songs.forEach(song => {
+        const { title, url, image } = song;
+        let [songname, songartist] = title.split(" - ");
+        songartist = songartist ? songartist.trim() : "Unknown Artist";
+        songname = songname.trim();
+
         songList.innerHTML += `
-        <div class="song" data-title="${songname}" data-fullpath="${song}">
+        <div class="song" data-title="${songname}" data-fullpath="${url}">
             <div class="playmusic">
                 <img src="imgFolder/play.svg" alt="play">
             </div>
@@ -37,9 +34,11 @@ async function getsongs(folder) {
                 <p>${songartist}</p>
             </div>
         </div>`;
-    }
+    });
 
-    allSongs = songs;
+    // Save full list of song URLs for next/prev
+    allSongs = songs.map(song => song.url);
+
     attachSongClickEvents();
     return songs;
 }
