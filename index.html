@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibefy - Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="box1">
+                <div class="logo audiowide-regular">
+                    <img src="imgFolder/logo.svg" alt="Logo" class="invert" height="65px" width="65px">
+                    Vibefy
+                </div>
+                <div class="home">
+                    <ul>
+                        <li><img src="imgFolder/home.svg" class="invert" alt="Home">Home</li>
+                        <li><img src="imgFolder/search.svg" class="invert" alt="Search">Search</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="library">
+                    <div class="heading">
+                        <img src="imgFolder/library.svg" class="invert" alt="Library">
+                        <h3>Your Library</h3>
+                        <img src="imgFolder/close.svg" alt="Close" class="closebtn">
+                    </div>
+                    <div class="songlist">
+                        
+                    </div>
+                    <audio id="audioPlayer"></audio>
+                    <div class="footer">
+                        <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                        </div>
+                        <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+                <div class="nav">
+                    <div class="hamburger">
+                        <img src="imgFolder/hamburger.svg" alt="Menu" height="30px" width="30px">
+                    </div>
+                    <div class="move">
+                        <img src="imgFolder/left.svg" alt="Back">
+                        <img src="imgFolder/right.svg" alt="Forward">
+                    </div>
+                    <div class="buttons">
+                        <button id="signinbtn">Sign up</button>
+                        <button id="loginbtn">Log in</button>
+                    </div>
+                </div>
+            <div class="box3">
+                <h1>Playlists</h1>
+                <div class="cardcontainer">
+                    <div data-folder="90's" class="card">
+                        <div class="play">
+                            <img src="imgFolder/play.svg" alt="play">
+                        </div>
+                        <img src="imgFolder/90's.webp" alt="tea">
+                        <h2>90's Bollywood</h2>
+                        <p>Evergreen songs to make your chai ki chuski more better</p>
+                    </div>
+                    <div data-folder="devotion" class="card">
+                        <div class="play">
+                            <img src="imgFolder/play.svg" alt="play">
+                        </div>
+                        <img src="imgFolder/devotional.webp" alt="tea">
+                        <h2>Devotional Corner</h2>
+                        <p>Dive into the sea of devotion and set your mind free</p>
+                    </div>
+                    <div data-folder="20's" class="card">
+                        <div class="play">
+                            <img src="imgFolder/play.svg" alt="play">
+                        </div>
+                        <img src="imgFolder/20's.webp" alt="tea">
+                        <h2>20's Bollywood</h2>
+                        <p>Enlighten the drives and set the atmosphere </p>
+                    </div>
+                    <div data-folder="raps" class="card">
+                        <div class="play">
+                            <img src="imgFolder/play.svg" alt="play">
+                        </div>
+                        <img src="imgFolder/rap.webp" alt="tea">
+                        <h2>Rap Songs</h2>
+                        <p>Vibe on some raps, beats and more...</p>
+                    </div>
+                    <div data-folder="tollywood" class="card">
+                        <div class="play">
+                            <img src="imgFolder/play.svg" alt="play">
+                        </div>
+                        <img src="imgFolder/tollywood.webp" alt="tea">
+                        <h2>Try New</h2>
+                        <p>Tollywood hits which you will surely enjoy</p>
+                    </div>
+                    <div data-folder="sunset" class="card">
+                        <div class="play">
+                            <img src="imgFolder/play.svg" alt="play">
+                        </div>
+                        <img src="imgFolder/sunset.webp" alt="tea">
+                        <h2>Sunset Serenity</h2>
+                        <p>Smooth jazz, lo-fi, and ambient tracks to unwind</p>
+                    </div>
+                    <div data-folder="workout" class="card">
+                        <div class="play">
+                            <img src="imgFolder/play.svg" alt="play">
+                        </div>
+                        <img src="imgFolder/workout.webp" alt="tea">
+                        <h2>Adrenaline Rush</h2>
+                        <p>Rock, EDM, and hype music for intense workout sessions</p>
+                    </div>
+                    <div data-folder="pain" class="card">
+                        <div class="play">
+                            <img src="imgFolder/play.svg" alt="play">
+                        </div>
+                        <img src="imgFolder/tears.webp" alt="tea">
+                        <h2>Tears in the Rain</h2>
+                        <p>Heartbreak, Sad songs with a touch of hope</p>
+                    </div>
+                    <div data-folder="study" class="card">
+                        <div class="play">
+                            <img src="imgFolder/play.svg" alt="play">
+                        </div>
+                        <img src="imgFolder/meditation.webp" alt="tea">
+                        <h2>Focus & Study</h2>
+                        <p>Instrumental, classical music to help you stay productive.</p>
+                    </div>
+                    <div data-folder="romance" class="card">
+                        <div class="play">
+                            <img src="imgFolder/play.svg" alt="play">
+                        </div>
+                        <img src="imgFolder/romantic.webp" alt="tea">
+                        <h2>Heartstrings</h2>
+                        <p>Soulful love songs, poetic songs for hopeless romantics</p>
+                    </div>
+                </div>
+                <div class="playbar_container">
+                    <div class="playbar">
+                        <div class="control">
+                            <div class="songabt"></div>
+                            <div class="songbtns">
+                                <img id="prevbtn" src="imgFolder/prev.svg" alt="Previous">
+                                <img id="playbtn" src="imgFolder/songplay.svg" alt="Play"> 
+                                <img id="nextbtn" src="imgFolder/next.svg" alt="Next">
+                            </div>
+                            <div class="songtime"></div>
+                        </div>
+                        <div class="seekbar">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
