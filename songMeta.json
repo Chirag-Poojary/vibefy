@@ -1,0 +1,72 @@
+{
+    "90's": [
+      {
+        "title": "Aap Ki Ankhon Mein Kuch - R.D. Burman",
+        "url": "songs/90's/Aap Ki Ankhon Mein Kuch - R.D. Burman.mp3",
+        "image": "imgFolder/Aap Ki Ankhon Mein Kuch.png"
+      }
+    ],
+    "20's": [
+      {
+        "title": "Naina Da Kya Kasoor - Amit Trivedi",
+        "url": "songs/20's/Naina Da Kya Kasoor - Amit Trivedi.mp3",
+        "image": "imgFolder/Naina Da Kya Kasoor.png"
+      }
+    ],
+    "raps": [
+      {
+        "title": "Still Here(Intro) - KR$NA",
+        "url": "songs/raps/Still Here(Intro) - KR$NA.mp3",
+        "image": "imgFolder/Still Here(Intro).png"
+      }
+    ],
+    "devotion": [
+      {
+        "title": "Hanuman Chalisa - Aditya Jyotishi",
+        "url": "songs/devotion/Hanuman Chalisa - Aditya Jyotishi.mp3",
+        "image": "imgFolder/Hanuman Chalisa.png"
+      }
+    ],
+    "tollywood": [
+      {
+        "title": "Butta Bomma - Armaan Malik",
+        "url": "songs/tollywood/Butta Bomma - Armaan Malik.mp3",
+        "image": "imgFolder/Butta Bomma.png"
+      }
+    ],
+    "sunset": [
+      {
+        "title": "Relaxing Music - Alex",
+        "url": "songs/sunset/Relaxing Music - Alex.mp3",
+        "image": "imgFolder/Relaxing Music.png"
+      }
+    ],
+    "workout": [
+      {
+        "title": "Kar Har Maidan Fateh - Sukhwinder Singh",
+        "url": "songs/workout/Kar Har Maidan Fateh - Sukhwinder Singh.mp3",
+        "image": "imgFolder/Kar Har Maidan Fateh.png"
+      }
+    ],
+    "pain": [
+      {
+        "title": "Zaroori Tha - Rahat Fateh Ali Khan",
+        "url": "songs/pain/Zaroori Tha - Rahat Fateh Ali Khan.mp3",
+        "image": "imgFolder/Zaroori Tha.png"
+      }
+    ],
+    "study": [
+      {
+        "title": "Focus and Melody",
+        "url": "songs/study/Focus and Melody.mp3",
+        "image": "imgFolder/Focus and Melody.png"
+      }
+    ],
+    "romance": [
+      {
+        "title": "O Rangrez - Shankar-Ehsaan-Loy",
+        "url": "songs/romance/O Rangrez - Shankar-Ehsaan-Loy.mp3",
+        "image": "imgFolder/O Rangrez.png"
+      }
+    ]
+}

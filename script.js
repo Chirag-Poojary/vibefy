@@ -5,8 +5,7 @@ let currentIndex = 0;
 
 async function getsongs(folder) {
     currFolder = folder;
-    let a = await fetch(`https://vibefy-wheat.vercel.app
-/songs/${folder}/`);
+    let a = await fetch('songMeta.json');
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
